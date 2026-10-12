@@ -1,0 +1,25 @@
+name: Deploy LEWAM to DirectAdmin
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy static site
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.DA_FTP_SERVER }}
+          username: ${{ secrets.DA_FTP_USERNAME }}
+          password: ${{ secrets.DA_FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./
+          server-dir: /domains/lewam.pro.et/public_html/
+          exclude: |
+            **/.git*/**
+            **/.github/**
+            **/node_modules/**
