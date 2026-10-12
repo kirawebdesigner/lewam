@@ -67,5 +67,5 @@
     <footer><span><span class="mark small">ል</span> LEWAM · Developer docs</span><span>Staging only · no real money moves</span></footer>
   </div>
 </body>
-<script>document.querySelectorAll('code').forEach((node)=>{node.textContent=node.textContent.replaceAll('https://etb-billing-sandbox.onrender.com','https://etb-billing-sandbox.ethiodeploy.com')});document.querySelectorAll('[data-copy]').forEach((button)=>button.addEventListener('click',async()=>{await navigator.clipboard.writeText(button.dataset.copy);const label=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=label,1400)}));</script>
+<script>document.querySelectorAll('code').forEach((node)=>{node.textContent=node.textContent.replaceAll('https://etb-billing-sandbox.onrender.com','https://etb-billing-sandbox.ethiodeploy.com').replaceAll('sk_test_yeshay_01','sk_test_demo_01')});document.querySelectorAll('[data-copy]').forEach((button)=>{button.dataset.copy='sk_test_demo_01';button.addEventListener('click',async()=>{await navigator.clipboard.writeText(button.dataset.copy);const label=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=label,1400)})});</script>
 </html>
