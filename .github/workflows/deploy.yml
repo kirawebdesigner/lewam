@@ -19,7 +19,6 @@ jobs:
           port: 21
           local-dir: ./
           server-dir: /domains/lewam.pro.et/public_html/
-          dangerous-clean-slate: true
           exclude: |
             **/.git*/**
             **/.github/**
