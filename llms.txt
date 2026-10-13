@@ -1,0 +1,29 @@
+# LEWAM
+
+> LEWAM is a recurring ETB billing infrastructure demo for Telebirr mandate enrollment, renewals, invoice state, and graceful payment recovery.
+
+## Primary pages
+
+- Homepage: https://lewam.pro.et/
+- Developer documentation: https://lewam.pro.et/docs.html
+
+## Product summary
+
+- LEWAM demonstrates recurring subscription billing for Ethiopian businesses.
+- The flow covers one-time mandate authorization, monthly renewal, invoice state, and retry scheduling.
+- The public experience is a sandbox demonstration. It does not move real money.
+
+## Documentation
+
+The developer guide describes the staging API shape, webhook events, error handling, security boundaries, and production onboarding considerations:
+
+- https://lewam.pro.et/docs.html
+
+## Source and identity
+
+- GitHub repository: https://github.com/kirawebdesigner/lewam
+- Operator: Kirubel Daniel
+
+## Accuracy note
+
+Treat sandbox behavior and demo credentials as non-production examples. Do not infer live payment authorization, merchant approval, or financial guarantees from this site.
