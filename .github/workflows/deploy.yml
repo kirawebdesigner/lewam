@@ -12,7 +12,7 @@ jobs:
       - name: Deploy static site
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: lewam.pro.et
+          server: lv-shared02.dapanel.net
           username: ${{ secrets.DA_FTP_USERNAME }}
           password: ${{ secrets.DA_FTP_PASSWORD }}
           protocol: ftp
