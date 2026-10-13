@@ -1,7 +1,8 @@
 DirectoryIndex index.html
 
 RewriteEngine On
-RewriteRule ^docs/?$ docs/index.html [L]
+RewriteRule ^docs$ /docs/ [R=301,L]
+RewriteRule ^docs/$ docs/index.html [L]
 
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://lewam.pro.et%{REQUEST_URI} [R=301,L]
